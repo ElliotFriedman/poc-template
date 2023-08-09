@@ -10,10 +10,6 @@ interface IPoC {
         address token;
         int256 amount;
     }
-
-    /// @notice deploys the attack contract (if any)
-    /// returns address of newly deployed contract
-    function deploy() external returns (address);
     
     /// @notice step one, fund the contract with different tokens and amounts
     function fund(TokenAmounts[] calldata amounts) external;

@@ -5,7 +5,7 @@ import {IERC20} from "@src/interface/IERC20.sol";
 import {IPoC} from "@src/IPoC.sol";
 import {Test, console} from "forge-std/Test.sol";
 
-contract PoC is Test {
+contract PoC is IPoC, Test {
     /// @notice starting hacker token amounts
     IPoC.TokenAmounts[] public tokenAmounts;
 
